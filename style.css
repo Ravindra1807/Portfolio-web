@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0F172A;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior:smooth;
+     scroll-padding-top: 80px; 
+}
+
+
+/* Navbar Styling */
+
+.navbar {
+    position: relative;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background: #1E293B;
+    position: sticky;
+    border-bottom: 1px solid gray;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-family: "Black Ops One", system-ui;
+    width: 80%;
+    text-align: center;
+    color: #38BDF8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #38BDF8;
+}
+
+
+.menu-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero-right {
+    flex: 1.2;
+}
+
+.hero-left {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.hero-right h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-family: "Black Ops One", sans-serif;
+    color: white;
+}
+
+.hero-right h1 span {
+    color: #38BDF8;
+}
+
+.hero-right h2 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    color: #38BDF8;
+    font-family: "Black Ops One", sans-serif;
+}
+
+.hero-right p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    max-width: 600px;
+}
+
+.hero-btns {
+    margin-top: 30px;
+}
+
+.resume-btn,
+.btn {
+    font-size: 1vw;
+    padding: 12px 25px;
+    margin-right: 2vw;
+    border: 2px solid #a855f7;
+    color: white;
+    background-color: #1e2167;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.About {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.About-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.About-tittle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-tittle-a div {
+    color: #38BDF8;
+    font-size: 2.5rem;
+    font-family: "Black Ops One", sans-serif;
+    margin-bottom: 15px;
+}
+
+.about-tittle-b p {
+    max-width: 700px;
+    margin: auto;
+    color: #e5e7eb;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-left,
+.about-right {
+
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.about-left h3,
+.about-right h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 30px;
+}
+
+.about-left h3 i,
+.about-right h3 i {
+    color: #6d28d9;
+    margin-right: 10px;
+}
+
+.left-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.left-info a {
+    text-decoration: none;
+}
+
+.left-info i {
+
+    font-size: 1.4rem;
+    color: #6d28d9;
+}
+
+.left-info span {
+    font-size: 1.1rem;
+    color: #1f2937;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.left-bottom {
+
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.left-bottom a {
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.left-bottom a i {
+    font-size: 2rem;
+    color: #6d28d9;
+
+}
+
+.left-bottom a:hover {
+
+    background: #6d28d9;
+    transform: translateY(-5px);
+}
+
+.left-bottom a:hover i {
+    color: white;
+}
+
+.education-info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.education-info .coll a,
+.education-info .ed {
+
+    color: rgb(109, 40, 217);
+}
+
+.coll {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.ed {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6d28d9;
+}
+
+.r {
+    background: rgba(109, 40, 217, .12);
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: #6d28d9;
+    text-align: center;
+    font-weight: 600;
+}
+
+.education-info p {
+    color: #374151;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* ================= SKILL'S SECTION ================= */
+
+.skills {
+    width: 100%;
+    padding: 80px 5%;
+}
+
+.tittle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tittle div {
+    font-size: 2.5rem;
+    font-family: "Black Ops One", sans-serif;
+    color: #38BDF8;
+    margin-bottom: 10px;
+}
+
+.tittle p {
+    color: #cbd5e1;
+}
+
+.skills-container {
+
+
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+
+    height: 150px;
+
+    background: white;
+    color: #111827;
+    border-radius: 18px;
+    padding: 30px 20px;
+    min-height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s ease;
+}
+
+.skill-card:nth-child(6) {
+    grid-column: 2;
+}
+
+.skill-card:nth-child(7) {
+    grid-column: 3;
+}
+
+.skill-card:nth-child(8) {
+    grid-column: 4;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+}
+
+.skill-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-card span {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+    padding: 80px 5%;
+    background: #0F172A;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-title div {
+    font-size: 2.5rem;
+    font-family: "Black Ops One", sans-serif;
+    color: #38BDF8;
+    margin-bottom: 10px;
+}
+
+.contact-title p {
+    color: #cbd5e1;
+    font-size: 1rem;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+}
+
+.contact-info,
+.contact-form {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.contact-info h3 {
+    color: #111827;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-box i {
+    color: #06B6D4;
+    font-size: 1.4rem;
+}
+
+.info-box span {
+    color: #111827;
+    font-size: 1rem;
+}
+
+.social-links {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .3s ease;
+
+}
+
+.social-links a i {
+    font-size: 2rem;
+}
+
+.social-links a {
+    color: #06B6D4;
+}
+
+.social-links a:hover {
+    background: #de1515;
+    color: rgb(255, 255, 255);
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #F3F4F6;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.contact-title div {
+    font-size: 3rem;
+    font-family: "Black Ops One", sans-serif;
+    color: #38BDF8;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+.contact-form button {
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    background: #06B6D4;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-form button:hover {
+    background: #0891B2;
+    transform: translateY(-3px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:798px) {
+
+    /* Navbar Mobile Styling */
+    .navbar {
+        position: relative;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 8px;
+        left: auto;
+        width: 180px;
+        background: #1E293B;
+        border-radius: 10px;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 15px;
+        gap: 15px;
+
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hero Section Mobile Styling */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .hero-left img {
+        max-width: 280px;
+    }
+
+    .hero-right h1 {
+        font-size: 2rem;
+    }
+
+    .hero-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-right p {
+        font-size: 0.95rem;
+     }
+
+    .btn {
+        display: none;
+    }
+
+    .resume-btn {
+        padding: 10px 15px;
+        font-size: 0.74rem;
+    }
+
+    /* About Section Styling */
+    .About {
+        padding: 60px 0;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-left,
+    .about-right {
+        padding: 25px;
+    }
+
+    .about-tittle-a div {
+        font-size: 2rem;
+    }
+
+    .about-left h3,
+    .about-right h3 {
+        font-size: 1.6rem;
+    }
+
+    .left-info {
+        gap: 12px;
+    }
+
+    .left-bottom {
+        gap: 12px;
+    }
+
+    .left-bottom a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .left-bottom a i {
+        font-size: 1.3rem;
+    }
+
+
+    .left-info i {
+        font-size: 1.2rem;
+    }
+
+    .left-info span {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+
+    .coll {
+        font-size: 1.1rem;
+    }
+
+    .ed {
+        font-size: 1rem;
+    }
+
+    .education-info p {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    /* Skills Section Mobile Styling */
+    .skills {
+        padding: 60px 20px;
+    }
+
+    .tittle div {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .skill-card:nth-child(6),
+    .skill-card:nth-child(7),
+    .skill-card:nth-child(8) {
+        grid-column: auto;
+    }
+
+    .skill-card {
+        min-height: 120px;
+        padding: 20px 10px;
+    }
+
+    .skill-card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-card span {
+        font-size: .85rem;
+    }
+
+
+    /* Contact Section Mobile Styling */
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-title div {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.6rem;
+    }
+
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-links a i {
+        font-size: 1.3rem;
+    }
+
+    .info-box span {
+        font-size: .95rem;
+        word-break: break-word;
+    }
+
+    .social-links {
+        gap: 12px;
+        justify-content: center;
+    }
+}
